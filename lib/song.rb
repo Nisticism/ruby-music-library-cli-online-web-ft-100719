@@ -23,9 +23,8 @@ class Song
   end
   
   def self.create(name, artist = nil, genre = nil)
-    @name = name 
-    @artist = artist
-    @genre = genre
+    new_song = Song.new(name, artist, genre)
+    new_song.save
     save
   end
   
