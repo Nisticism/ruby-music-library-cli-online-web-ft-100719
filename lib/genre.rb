@@ -17,9 +17,8 @@ class Genre
   end
   
   def self.create(name)
-    new_song = Song.new(name)
-    @@all << new_song
+    new_genre = Genre.new(name)
+    @@all << new_genre
   end
-  
   
 end
