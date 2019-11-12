@@ -22,9 +22,11 @@ class Song
     @@all.clear
   end
   
-  def self.create(name)
-    new_song = Song.new(name)
-    @@all << new_song
+  def self.create(name, artist = nil, genre = nil)
+    @name = name 
+    @artist = artist
+    @genre = genre
+    save
   end
   
 end
